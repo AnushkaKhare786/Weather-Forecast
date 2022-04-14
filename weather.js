@@ -6,7 +6,7 @@ submitButton.addEventListener("click",getWeatherReport)
 function getWeatherReport(){
     let input=document.querySelector(".search-box").value;
     console.log(input)
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=8d26ceb827b0e46da3c335745a6bfc50`).
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=656ad5dc8f7fff903895a53f5f6a1abc`).
     then(response=>response.json()).then(result=>{
         console.log(result)
         document.querySelector("main").style.visibility="visible"
